@@ -1,0 +1,29 @@
+============================================================
+SmartTriage AI - ICU Risk Model Evaluation Report
+============================================================
+Training Device      : CUDA (GPU Acceleration)
+5-Fold CV ROC-AUC    : 0.7576 (+/- 0.0437)
+------------------------------------------------------------
+Test Accuracy        : 0.7403
+Test Precision       : 0.7714
+Test Recall          : 0.6923
+Test F1-Score        : 0.7297
+Test ROC-AUC         : 0.8009
+
+Confusion Matrix (Test Set):
+                 Predicted
+               No ICU  ICU
+Actual No ICU      30      8
+       ICU         12     27
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      No ICU       0.71      0.79      0.75        38
+Requires ICU       0.77      0.69      0.73        39
+
+    accuracy                           0.74        77
+   macro avg       0.74      0.74      0.74        77
+weighted avg       0.74      0.74      0.74        77
+
+============================================================

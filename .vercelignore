@@ -1,0 +1,12 @@
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+*.zip
+*.xlsx
+.git
+frontend/node_modules/
+.streamlit/
+run_dashboard.bat
+train_model.bat

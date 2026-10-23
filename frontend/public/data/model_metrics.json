@@ -1,0 +1,91 @@
+{
+  "model_name": "XGBoost GPU-Accelerated Hist Classifier",
+  "framework": "XGBoost 3.3.0 + Scikit-Learn Pipeline",
+  "dataset": "Hospital S\u00edrio-Liban\u00eas COVID-19 Clinical Cohort (S\u00e3o Paulo)",
+  "total_patients": 384,
+  "cv_roc_auc": 0.7576,
+  "cv_std": 0.0437,
+  "test_roc_auc": 0.8009,
+  "test_accuracy": 0.7403,
+  "test_precision": 0.7714,
+  "test_recall": 0.6923,
+  "test_f1": 0.7297,
+  "confusion_matrix": {
+    "tn": 30,
+    "fp": 8,
+    "fn": 12,
+    "tp": 27
+  },
+  "feature_importances": [
+    {
+      "feature": "Tachypnea Flag (RR > 22)",
+      "importance": 0.2791,
+      "clinical_significance": "Primary respiratory distress indicator"
+    },
+    {
+      "feature": "Age",
+      "importance": 0.1003,
+      "clinical_significance": "Baseline systemic vulnerability"
+    },
+    {
+      "feature": "Geriatric Flag (Age \u2265 65)",
+      "importance": 0.0951,
+      "clinical_significance": "Immunosenescence and frailty"
+    },
+    {
+      "feature": "Respiratory Rate",
+      "importance": 0.0795,
+      "clinical_significance": "Continuous work of breathing"
+    },
+    {
+      "feature": "Diastolic BP",
+      "importance": 0.0572,
+      "clinical_significance": "Coronary perfusion & vascular tone"
+    },
+    {
+      "feature": "Pulse Pressure",
+      "importance": 0.0536,
+      "clinical_significance": "Stroke volume & arterial stiffness"
+    },
+    {
+      "feature": "Temperature",
+      "importance": 0.0504,
+      "clinical_significance": "Systemic Inflammatory Response (SIRS)"
+    },
+    {
+      "feature": "Heart Rate",
+      "importance": 0.0462,
+      "clinical_significance": "Compensatory cardiac output demand"
+    },
+    {
+      "feature": "Mean Arterial Pressure (MAP)",
+      "importance": 0.045,
+      "clinical_significance": "End-organ perfusion pressure"
+    },
+    {
+      "feature": "Oxygen Saturation (SpO2)",
+      "importance": 0.0433,
+      "clinical_significance": "Arterial oxygenation carriage"
+    },
+    {
+      "feature": "Tachycardia Flag (HR > 100)",
+      "importance": 0.0403,
+      "clinical_significance": "Sympathetic activation"
+    },
+    {
+      "feature": "Shock Index (HR / SBP)",
+      "importance": 0.0402,
+      "clinical_significance": "Early occult shock / hypovolemia"
+    },
+    {
+      "feature": "Hypoxemia Flag (SpO2 < 94%)",
+      "importance": 0.0362,
+      "clinical_significance": "Acute respiratory decompensation"
+    },
+    {
+      "feature": "Systolic BP",
+      "importance": 0.0337,
+      "clinical_significance": "Left ventricular afterload & stroke work"
+    }
+  ]
+}
